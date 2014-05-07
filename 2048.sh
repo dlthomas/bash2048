@@ -58,11 +58,11 @@ function spaces() {
 }
 
 function pick_space() {
-	spaces | rl | head -1
+	spaces | shuf | head -1
 }
 
 function pick_tile() {
-	{ yes 0 | head -9; echo 1; } | rl | head -1
+	{ yes 0 | head -9; echo 1; } | shuf | head -1
 }
 
 function repl() {
